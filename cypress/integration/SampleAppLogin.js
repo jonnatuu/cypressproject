@@ -1,9 +1,11 @@
 describe('Testing with Cypress', () => {
-        it('Visiting the page', () => {
+        // Name of the test
+        it('Login to Sample App', () => {
+
         // Open the Ui Testing playground -page
           cy.visit('http://uitestingplayground.com')
 
-        // Find the Sample App link, Clicking the Sample App link
+        // Find the Sample App link, click the link
           cy.contains('Sample App').click()
 
         // Let's be sure, that we're on the right page
@@ -17,5 +19,8 @@ describe('Testing with Cypress', () => {
 
         // Login with Log in -button
           cy.get('button[id=login]').click()
+
+        // Login is succesfull
+          cy.contains('text-success')
         })
       })
