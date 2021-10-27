@@ -1,21 +1,21 @@
-// sample_spec.js created with Cypress
-//
-// Start writing your Cypress tests below!
-// If you're unfamiliar with how Cypress works,
-// check out the link below and learn how to write your first test:
-// https://on.cypress.io/writing-first-test
+describe('Testing with Cypress', () => {
+        it('Visiting the page', () => {
+        // Open the Ui Testing playground -page
+          cy.visit('http://uitestingplayground.com')
 
-/// <reference types="Cypress" />
+        // Find the Sample App link, Clicking the Sample App link
+          cy.contains('Sample App').click()
 
-describe('My First Test', () => {
-    it('Testataan paljuoravan sivuja', () => {
-      cy.visit('https://www.paljuorava.fi')
+        // Let's be sure, that we're on the right page
+          cy.url().should('include', '/sampleapp')
 
-      cy.contains('Yhteystiedot').click()
-      cy.url().should('include', 'yhteystiedot')
+        // Type into login input username qwerty
+          cy.get('input[name=UserName]').type('qwerty').should('have.value', 'qwerty')
 
-      cy.get('validates-as-required')
-      .type('Jonnan testi')
+        // Type into password input password pwd
+          cy.get('input[name=Password]').type('pwd')
 
-    })
-  })
+        // Login with Log in -button
+          cy.get('button[id=login]').click()
+        })
+      })
