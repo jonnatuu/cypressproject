@@ -6,11 +6,9 @@ AjaxData.js<br>
 
 <h3>Installs need to be done before running:</h3>
 
-npm init
-
-npm install npm --global
-
-npm install cypress --save-dev
+npm init<br>
+npm install npm --global<br>
+npm install cypress --save-dev<br>
 
 <h3>Open Cypress:</h3>
 
