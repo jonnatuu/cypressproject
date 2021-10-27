@@ -1,10 +1,8 @@
 ﻿# cypressproject
 
-Test files is found from "integration" folder:
-
-SampleAppLogin.js
-
-AjaxData.js
+<h3> Test files is found from "integration" folder: </h3><br>
+SampleAppLogin.js<br>
+AjaxData.js<br>
 
 Installs need to be done before running:
 
