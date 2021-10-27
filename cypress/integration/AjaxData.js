@@ -4,8 +4,6 @@ describe('Testing with Cypress', () => {
       
     // Open the Ui Testing playground -page
       cy.visit('http://uitestingplayground.com')
-
-    
     
     // Find the AJAX Data link, click the link
       cy.contains('AJAX Data').click()
@@ -13,19 +11,10 @@ describe('Testing with Cypress', () => {
     // Let's be sure, that we're on the right page
       cy.url().should('include', '/ajax')
 
-/*      
-    // Type into login input username qwerty
-      cy.get('input[name=UserName]').type('qwerty').should('have.value', 'qwerty')
+    // Click AJAX request button, and wait for 16s data to be loaded
+      cy.get('#ajaxButton').should('contain', 'Button').click().wait(16000)
 
-    // Type into password input password pwd
-      cy.get('input[name=Password]').type('pwd')
-
-    // Login with Log in -button
-      cy.get('button[id=login]').click()
-
-    // Login is succesfull
-      cy.contains('text-success') 
-
-    */
+    // Check, that data is loaded with AJAX get request
+      cy.contains('bg-success')
     })
   })
