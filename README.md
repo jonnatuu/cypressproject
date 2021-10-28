@@ -1,10 +1,4 @@
 ﻿# cypressproject
-
-<h3> Test files is found from cypress/integration folder: </h3>
-SampleAppLogin.js<br>
-AjaxData.js<br>
-LoadDelay.js<br>
-
 <h3>Installs need to be done before running:</h3>
 
 npm install <br>
