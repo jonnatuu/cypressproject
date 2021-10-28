@@ -3,7 +3,7 @@
 
 npm install <br>
 
-<h3>Open Cypress:</h3>
+<h3>Open and run Cypress:</h3>
 
 npx cypress open<br>
 
