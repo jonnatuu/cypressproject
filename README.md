@@ -7,7 +7,6 @@ LoadDelay.js<br>
 
 <h3>Installs need to be done before running:</h3>
 
-npm init<br>
 npm install npm --global<br>
 npm install cypress --save-dev<br>
 
